@@ -15,6 +15,7 @@ class AddContactList {
   selectContact(firstname, lastName){
     cy.get('.contacts thead tbody').contains(firstname+' '+lastName).click()
   }
+  
   deleteContact(firstname, lastName){
     cy.get('.contactTable tr').its('length').then((counter)=>{
       cy.get('.contactTable tr').contains(firstname+' '+lastName).click()
