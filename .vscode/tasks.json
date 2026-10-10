@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Cypress: open", "type": "npm", "script": "cy:open", "problemMatcher": [] },
+    { "label": "Cypress: run all", "type": "npm", "script": "cy:run", "problemMatcher": [] },
+    { "label": "Cypress: run smoke", "type": "npm", "script": "cy:run:smoke", "problemMatcher": [] },
+    { "label": "Cypress: run regression", "type": "npm", "script": "cy:run:regression", "problemMatcher": [] },
+    { "label": "Cypress: run api", "type": "npm", "script": "cy:run:api", "problemMatcher": [] }
+  ]
+}

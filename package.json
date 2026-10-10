@@ -1,0 +1,21 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "Cypress end-to-end and API test automation, organized by suite",
+  "private": true,
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:smoke": "cypress run --spec \"cypress/e2e/smoke/**/*.cy.js\"",
+    "cy:run:regression": "cypress run --spec \"cypress/e2e/regression/**/*.cy.js\"",
+    "cy:run:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:verify": "cypress verify",
+    "lint": "eslint cypress --ext .js"
+  },
+  "devDependencies": {
+    "cypress": "^15.0.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-cypress": "^3.5.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "files.exclude": { "**/node_modules": true },
+  "search.exclude": { "**/node_modules": true, "cypress/videos": true, "cypress/screenshots": true }
+}
