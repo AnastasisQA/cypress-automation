@@ -12,9 +12,7 @@ module.exports = defineConfig({
     screenshotOnRunFailure: true,
     defaultCommandTimeout: 8000,
     retries: { runMode: 2, openMode: 0 },
-    env: {
-      apiUrl: "https://jsonplaceholder.typicode.com",
-    },
+    env: false ,
     setupNodeEvents(on, config) {
       // Optional: load per-environment config, e.g. cypress.env.json or config/<env>.json
       return config;
