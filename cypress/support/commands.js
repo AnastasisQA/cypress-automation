@@ -1,21 +1,23 @@
-// Custom commands available in every spec as cy.<name>()
-
-// Select by data-cy attribute:  cy.getByCy("submit-button")
-Cypress.Commands.add("getByCy", (value, options) => {
-  return cy.get(`[data-cy="${value}"]`, options);
+//Open thinking-tester-contact-list.herokuapp link
+Cypress.Commands.add("OpenThinkTesterPage", () => {
+  cy.visit('https://thinking-tester-contact-list.herokuapp.com')
+  //cy.get('.nav', { timeout: 5000 })
 });
+
 
 // Login once and reuse the session across tests (adjust selectors/URL to your app)
-Cypress.Commands.add("login", (username, password) => {
-  cy.session(
-    [username, password],
-    () => {
-      cy.visit("/login");
-      cy.getByCy("username").type(username);
-      cy.getByCy("password").type(password, { log: false });
-      cy.getByCy("login-button").click();
-      cy.url().should("not.include", "/login");
-    },
-    { cacheAcrossSpecs: true }
-  );
-});
+Cypress.Commands.add("Login", (email, password) => {
+      cy.get('#email').should('exist').and('be.visible').type(email)
+      cy.get('#password').should('exist').and('be.visible').type(password)
+      cy.get('#submit').should('exist').and('be.visible').click()
+})
+
+Cypress.Commands.add("AddUser", (firstName, lastName, email, password) => {
+      cy.get('#signup').should('exist').and('be.visible').click()
+      cy.get('#firstName').should('exist').and('be.visible').type(firstName)
+      cy.get('#lastName').should('exist').and('be.visible').type(lastName)
+      cy.get('#email').should('exist').and('be.visible').type(email)
+      cy.get('#password').should('exist').and('be.visible').type(password)
+      cy.get('.main-content').contains('Submit').should('be.visible').click()
+})
+

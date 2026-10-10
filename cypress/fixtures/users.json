@@ -1,4 +1,0 @@
-{
-  "validUser": { "name": "Test User", "email": "test.user@example.com" },
-  "newPost": { "title": "Cypress test post", "body": "Created by an automated test", "userId": 1 }
-}

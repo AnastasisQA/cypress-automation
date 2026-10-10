@@ -3,7 +3,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   // projectId: "xxxxxx", // add when you connect Cypress Cloud
   e2e: {
-    baseUrl: "https://example.cypress.io", // <-- replace with your app under test
+    baseUrl: "https://thinking-tester-contact-list.herokuapp.com/", // <-- replace with your app under test
     specPattern: "cypress/e2e/**/*.cy.{js,ts}",
     supportFile: "cypress/support/e2e.js",
     viewportWidth: 1366,

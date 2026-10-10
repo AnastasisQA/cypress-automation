@@ -1,0 +1,23 @@
+{
+"TC-0001": { 
+    "firstName": "Test User", 
+    "lastName": "amper",
+    "email": "amperar@example.com",
+    "password": "amper0001",
+    "contactFirstName": "Tasos",
+    "contactLastName": "Amper"
+  },
+  "TC-0002": {
+    "email": "amperr@example.com",
+    "password": "amper0001",
+    "contactFirstName": "Tasos",
+    "contactLastName": "Amper",
+    "contactDate": "09-04-2029"
+  },
+  "TC-0003": {
+    "email": "amperr@example.com",
+    "password": "amper0001",
+    "contactFirstName": "Tasossa",
+    "contactLastName": "Amper"
+  }
+}
